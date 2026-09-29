@@ -8,7 +8,11 @@ module ALU_Decoder(ALUOp,funct3,funct7,op,ALUControl);
     // Method 1 
     // assign ALUControl = (ALUOp == 2'b00) ? 3'b000 :
     //                     (ALUOp == 2'b01) ? 3'b001 :
+<<<<<<< HEAD
     //                     (ALUOp == 2'b10) ? ((funct3 == 3'b000) ? ((({op[5],funct7[5]} == 2'b00) | ({op[5],funct7[5]} == 2'b10)) ? 3'b000 : 3'b001) : 
+=======
+    //                     (ALUOp == 2'b10) ? ((funct3 == 3'b000) ? ((({op[5],funct7[5]} == 2'b00) | ({op[5],funct7[5]} == 2'b01) | ({op[5],funct7[5]} == 2'b10)) ? 3'b000 : 3'b001) : 
+>>>>>>> 9fa2a2ae37b247a0897d1bef581a0e9da4a7d160
     //                                         (funct3 == 3'b010) ? 3'b101 : 
     //                                         (funct3 == 3'b110) ? 3'b011 : 
     //                                         (funct3 == 3'b111) ? 3'b010 : 3'b000) :
@@ -24,3 +28,7 @@ module ALU_Decoder(ALUOp,funct3,funct7,op,ALUControl);
                         ((ALUOp == 2'b10) & (funct3 == 3'b111)) ? 3'b010 : 
                                                                   3'b000 ;
 endmodule
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9fa2a2ae37b247a0897d1bef581a0e9da4a7d160

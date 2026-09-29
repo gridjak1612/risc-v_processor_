@@ -12,4 +12,19 @@ module Instruction_Memory(rst,A,RD);
     $readmemh("memfile.hex",mem);
   end
 
+<<<<<<< HEAD
+=======
+
+/*
+  initial begin
+    //mem[0] = 32'hFFC4A303;
+    //mem[1] = 32'h00832383;
+    // mem[0] = 32'h0064A423;
+    // mem[1] = 32'h00B62423;
+    mem[0] = 32'h0062E233;
+    // mem[1] = 32'h00B62423;
+
+  end
+*/
+>>>>>>> 9fa2a2ae37b247a0897d1bef581a0e9da4a7d160
 endmodule
